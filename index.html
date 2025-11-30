@@ -53,32 +53,49 @@
                     <div class="col-xxl-7 d-flex flex-column align-items-center">
 
                         <!-- BOTÕES -->
-                        <div class="d-flex justify-content-center gap-3 mb-3 flex-wrap">
-                            <button 
-                                id="btnMissao"
-                                type="button"
-                                class="btn btn-primary btn-lg px-5 py-3 fs-6 fw-bolder">
-                                Missão
-                            </button>
+                       <div class="d-flex justify-content-center gap-3 mb-3 flex-wrap">
+    <!-- Botão Missão -->
+    <button 
+        id="btnMissao"
+        type="button"
+        class="btn btn-primary btn-lg px-5 py-3 fs-6 fw-bolder">
+        Missão
+    </button>
 
-                            <a 
-                                class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" 
-                                href="projects.html">
-                                Soluções
-                            </a>
-                        </div>
+    <!-- Botão Soluções -->
+    <button 
+        id="btnSolucoes"
+        type="button"
+        class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder">
+        Soluções
+    </button>
+</div>
 
-                        <!-- TEXTO OCULTO -->
-                        <div 
-                            id="textoMissao" 
-                            class="mt-3 p-4 border rounded shadow-sm text-center"
-                            style="display: none; max-width:600px;">
-                            <h4 class="fw-bold">Nossa Missão</h4>
-                            <p class="mb-0">
-                                Nossa missão é proporcionar soluções de engenharia inovadoras, eficientes e confiáveis,
-                                sempre com foco em tecnologia, qualidade e resultados consistentes para nossos clientes.
-                            </p>
-                        </div>
+<!-- TEXTO MISSÃO -->
+<div 
+    id="textoMissao" 
+    class="mt-3 p-4 border rounded shadow-sm text-center"
+    style="display: none; max-width:600px;">
+    <h4 class="fw-bold">Nossa Missão</h4>
+    <p class="mb-0">
+        Nossa missão é proporcionar soluções de engenharia inovadoras, eficientes e confiáveis,
+        sempre com foco em tecnologia, qualidade e resultados consistentes para nossos clientes.
+    </p>
+</div>
+
+<!-- TEXTO SOLUÇÕES -->
+<div 
+    id="textoSolucoes" 
+    class="mt-3 p-4 border rounded shadow-sm text-center"
+    style="display: none; max-width:600px;">
+    <h4 class="fw-bold">Soluções</h4>
+    <p class="mb-0">
+        Oferecemos soluções completas em engenharia, impressão 3D, desenvolvimento tecnológico,  
+        consultoria e serviços especializados para atender necessidades personalizadas.
+    </p>
+</div>
+
+
 
                         <!-- VÍDEO AJUSTADO -->
                         <div class="mt-4 d-flex justify-content-center">
@@ -144,18 +161,7 @@
     <script src="js/scripts.js"></script>
 
     <!-- JS Missão -->
-    <script>
-        const btnMissao = document.getElementById('btnMissao');
-        const textoMissao = document.getElementById('textoMissao');
-
-        btnMissao.addEventListener('click', () => {
-            if (textoMissao.style.display === 'none' || textoMissao.style.display === '') {
-                textoMissao.style.display = 'block';
-            } else {
-                textoMissao.style.display = 'none';
-            }
-        });
-    </script>
+    
 
 </body>
 </html>
