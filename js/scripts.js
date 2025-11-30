@@ -1,33 +1,27 @@
-<script>
-    const btnMissao = document.getElementById('btnMissao');
-    const btnSolucoes = document.getElementById('btnSolucoes');
+document.addEventListener("DOMContentLoaded", function () {
 
-    const textoMissao = document.getElementById('textoMissao');
-    const textoSolucoes = document.getElementById('textoSolucoes');
+    const btnMissao = document.getElementById("btnMissao");
+    const btnSolucoes = document.getElementById("btnSolucoes");
 
-    function esconderTodos() {
-        textoMissao.style.display = 'none';
-        textoSolucoes.style.display = 'none';
-    }
+    const textoMissao = document.getElementById("textoMissao");
+    const textoSolucoes = document.getElementById("textoSolucoes");
 
     // Botão Missão
-    btnMissao.addEventListener('click', () => {
-        if (textoMissao.style.display === 'none') {
-            esconderTodos();
-            textoMissao.style.display = 'block';
-        } else {
-            textoMissao.style.display = 'none';
-        }
+    btnMissao.addEventListener("click", () => {
+        textoMissao.style.display = 
+            textoMissao.style.display === "none" ? "block" : "none";
+
+        // Oculta o outro texto
+        textoSolucoes.style.display = "none";
     });
 
     // Botão Soluções
-    btnSolucoes.addEventListener('click', () => {
-        if (textoSolucoes.style.display === 'none') {
-            esconderTodos();
-            textoSolucoes.style.display = 'block';
-        } else {
-            textoSolucoes.style.display = 'none';
-        }
-    });
-</script>
+    btnSolucoes.addEventListener("click", () => {
+        textoSolucoes.style.display = 
+            textoSolucoes.style.display === "none" ? "block" : "none";
 
+        // Oculta o outro texto
+        textoMissao.style.display = "none";
+    });
+
+});
