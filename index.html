@@ -48,13 +48,13 @@
         <!-- Header -->
         <header class="py-5">
             <div class="container px-5 pb-5">
-                <div class="row justify-content-center">
+                <div class="row gx-5 justify-content-center">
 
-                    <div class="col-xxl-7 d-flex flex-column align-items-center">
+                    <!-- COLUNA ÚNICA: BOTÕES + TEXTO + VÍDEO -->
+                    <div class="col-xxl-7 text-center">
 
                         <!-- BOTÕES CENTRALIZADOS -->
                         <div class="d-flex justify-content-center gap-3 mb-3 flex-wrap">
-                            <!-- Botão Missão -->
                             <button 
                                 id="btnMissao"
                                 type="button"
@@ -62,20 +62,18 @@
                                 Missão
                             </button>
 
-                            <!-- Botão Soluções -->
-                            <button 
-                                id="btnSolucoes"
-                                type="button"
-                                class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder">
+                            <a 
+                                class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" 
+                                href="projects.html">
                                 Soluções
-                            </button>
+                            </a>
                         </div>
 
-                        <!-- TEXTO DA MISSÃO -->
+                        <!-- TEXTO OCULTO -->
                         <div 
                             id="textoMissao" 
-                            class="mt-3 p-4 border rounded shadow-sm text-center"
-                            style="display: none; max-width:600px; margin: 0 auto;">
+                            class="mt-3 p-4 border rounded shadow-sm mx-auto"
+                            style="display: none; max-width:600px;">
                             <h4 class="fw-bold">Nossa Missão</h4>
                             <p class="mb-0">
                                 Nossa missão é proporcionar soluções de engenharia inovadoras, eficientes e confiáveis,
@@ -83,20 +81,8 @@
                             </p>
                         </div>
 
-                        <!-- TEXTO DAS SOLUÇÕES -->
-                        <div 
-                            id="textoSolucoes" 
-                            class="mt-3 p-4 border rounded shadow-sm text-center"
-                            style="display: none; max-width:600px; margin: 0 auto;">
-                            <h4 class="fw-bold">Nossas Soluções</h4>
-                            <p class="mb-0">
-                                Oferecemos soluções personalizadas em ortóteses, próteses e impressão 3D,
-                                focadas em qualidade, inovação e conforto para nossos clientes.
-                            </p>
-                        </div>
-
-                        <!-- VÍDEO CENTRALIZADO -->
-                        <div class="profile bg-gradient-primary-to-secondary mt-4 w-100 d-flex justify-content-center">
+                        <!-- VÍDEO -->
+                        <div class="profile bg-gradient-primary-to-secondary mt-4">
                             <video 
                                 class="profile-img"
                                 autoplay
@@ -104,7 +90,7 @@
                                 loop
                                 playsinline
                                 preload="auto"
-                                style="width: 100%; max-width: 600px; height: auto; border-radius: 10px;">
+                                style="width: 100%; height: auto; border-radius: inherit;">
                                 <source src="assets/meu-video.mp4" type="video/mp4">
                                 Seu navegador não suporta vídeos HTML5.
                             </video>
@@ -161,26 +147,23 @@
     <!-- Core theme JS -->
     <script src="js/scripts.js"></script>
 
-    <!-- JavaScript para os botões -->
+    <!-- JavaScript para abrir/fechar o texto da Missão -->
     <script>
-    document.addEventListener("DOMContentLoaded", function() {
         const btnMissao = document.getElementById('btnMissao');
         const textoMissao = document.getElementById('textoMissao');
 
-        const btnSolucoes = document.getElementById('btnSolucoes');
-        const textoSolucoes = document.getElementById('textoSolucoes');
-
         btnMissao.addEventListener('click', () => {
-            textoMissao.style.display = (textoMissao.style.display === 'none' || textoMissao.style.display === '') ? 'block' : 'none';
+            if(textoMissao.style.display === 'none' || textoMissao.style.display === '') {
+                textoMissao.style.display = 'block';
+            } else {
+                textoMissao.style.display = 'none';
+            }
         });
-
-        btnSolucoes.addEventListener('click', () => {
-            textoSolucoes.style.display = (textoSolucoes.style.display === 'none' || textoSolucoes.style.display === '') ? 'block' : 'none';
-        });
-    });
     </script>
+
 </body>
 </html>
+
 
 
 
