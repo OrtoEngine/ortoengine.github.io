@@ -80,8 +80,8 @@
                     </p>
                 </div>
 
-                <!-- VÍDEO -->
-                <div class="profile bg-gradient-primary-to-secondary mt-4 w-100">
+                <!-- VÍDEO COM TAMANHO LIMITADO -->
+                <div class="profile bg-gradient-primary-to-secondary mt-4 w-100 d-flex justify-content-center">
                     <video 
                         class="profile-img"
                         autoplay
@@ -89,7 +89,7 @@
                         loop
                         playsinline
                         preload="auto"
-                        style="width: 100%; height: auto; border-radius: inherit;">
+                        style="width: 100%; max-width: 600px; height: auto; border-radius: 10px;">
                         <source src="assets/meu-video.mp4" type="video/mp4">
                         Seu navegador não suporta vídeos HTML5.
                     </video>
@@ -103,6 +103,14 @@
         </div>
     </div>
 </header>
+
+<script>
+    const btnMissao = document.getElementById('btnMissao');
+    const textoMissao = document.getElementById('textoMissao');
+
+    btnMissao.addEventListener('click', () => {
+        if(textoMissao.
+
 
 <script>
     const btnMissao = document.getElementById('btnMissao');
