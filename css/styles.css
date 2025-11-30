@@ -11749,7 +11749,45 @@ html {
     margin-left: 8px;
     margin-right: 8px;
 }
+/* Deixa cada item do menu com aparência de botão quadrado */
+.navbar-nav .nav-link {
+    font-size: 1.15rem;
+    padding: 15px 20px !important;
+    border-radius: 12px;
+    background-color: #f0f0f0;
+    color: #000 !important;
+    margin: 5px 8px;
+    border: 2px solid transparent;
+    transition: all 0.25s ease-in-out;
+    display: inline-block;
+}
+
+/* Efeito ao passar o mouse */
+.navbar-nav .nav-link:hover {
+    background-color: #0d6efd;
+    color: white !important;
+    border-color: #0d6efd;
+    transform: translateY(-2px);
+}
+
+/* Estado ativo ou focado */
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:focus {
+    background-color: #0d6efd;
+    color: white !important;
+    border-color: #0d6efd;
+}
+
+/* Em telas pequenas, deixar mais espaçado para acessibilidade */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        width: 100%;
+        text-align: center;
+        padding: 18px !important;
+        margin: 8px 0;
+    }
+}
 
   
- }
+ 
 }
