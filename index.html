@@ -53,8 +53,7 @@
                     <div class="col-xxl-7 d-flex flex-column align-items-center">
 
                         <!-- BOTÕES -->
-                       <div class="d-flex justify-content-center gap-3 mb-3 flex-wrap">
-    <!-- Botão Missão -->
+                      <div class="d-flex justify-content-center gap-3 mb-3 flex-wrap">
     <button 
         id="btnMissao"
         type="button"
@@ -62,7 +61,7 @@
         Missão
     </button>
 
-    <!-- Botão Soluções -->
+    <!-- Certifique-se de usar button (não <a>) para evitar navegação -->
     <button 
         id="btnSolucoes"
         type="button"
@@ -74,8 +73,8 @@
 <!-- TEXTO MISSÃO -->
 <div 
     id="textoMissao" 
-    class="mt-3 p-4 border rounded shadow-sm text-center"
-    style="display: none; max-width:600px;">
+    class="mt-3 p-4 border rounded shadow-sm text-center oculto"
+    style="max-width:600px; display:none; opacity:0; transition: opacity 250ms ease;">
     <h4 class="fw-bold">Nossa Missão</h4>
     <p class="mb-0">
         Nossa missão é proporcionar soluções de engenharia inovadoras, eficientes e confiáveis,
@@ -86,12 +85,12 @@
 <!-- TEXTO SOLUÇÕES -->
 <div 
     id="textoSolucoes" 
-    class="mt-3 p-4 border rounded shadow-sm text-center"
-    style="display: none; max-width:600px;">
+    class="mt-3 p-4 border rounded shadow-sm text-center oculto"
+    style="max-width:600px; display:none; opacity:0; transition: opacity 250ms ease;">
     <h4 class="fw-bold">Soluções</h4>
     <p class="mb-0">
         Oferecemos soluções completas em engenharia, impressão 3D, desenvolvimento tecnológico,  
-        consultoria e serviços especializados para atender necessidades personalizadas.
+        consultoria e serviços especializados para necessidades personalizadas.
     </p>
 </div>
 
