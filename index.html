@@ -46,79 +46,78 @@
         </nav>
 
         <!-- Header -->
-    <header class="py-5">
-    <div class="container px-5 pb-5">
-        <div class="row justify-content-center">
+        <header class="py-5">
+            <div class="container px-5 pb-5">
+                <div class="row justify-content-center">
 
-            <div class="col-xxl-7 d-flex flex-column align-items-center">
+                    <div class="col-xxl-7 d-flex flex-column align-items-center">
 
-                <!-- BOTÕES CENTRALIZADOS -->
-                <div class="d-flex justify-content-center gap-3 mb-3 flex-wrap">
-                    <button 
-                        id="btnMissao"
-                        type="button"
-                        class="btn btn-primary btn-lg px-5 py-3 fs-6 fw-bolder">
-                        Missão
-                    </button>
+                        <!-- BOTÕES CENTRALIZADOS -->
+                        <div class="d-flex justify-content-center gap-3 mb-3 flex-wrap">
+                            <!-- Botão Missão -->
+                            <button 
+                                id="btnMissao"
+                                type="button"
+                                class="btn btn-primary btn-lg px-5 py-3 fs-6 fw-bolder">
+                                Missão
+                            </button>
 
-                    <a 
-                        class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" 
-                        href="projects.html">
-                        Soluções
-                    </a>
+                            <!-- Botão Soluções -->
+                            <button 
+                                id="btnSolucoes"
+                                type="button"
+                                class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder">
+                                Soluções
+                            </button>
+                        </div>
+
+                        <!-- TEXTO DA MISSÃO -->
+                        <div 
+                            id="textoMissao" 
+                            class="mt-3 p-4 border rounded shadow-sm text-center"
+                            style="display: none; max-width:600px; margin: 0 auto;">
+                            <h4 class="fw-bold">Nossa Missão</h4>
+                            <p class="mb-0">
+                                Nossa missão é proporcionar soluções de engenharia inovadoras, eficientes e confiáveis,
+                                sempre com foco em tecnologia, qualidade e resultados consistentes para nossos clientes.
+                            </p>
+                        </div>
+
+                        <!-- TEXTO DAS SOLUÇÕES -->
+                        <div 
+                            id="textoSolucoes" 
+                            class="mt-3 p-4 border rounded shadow-sm text-center"
+                            style="display: none; max-width:600px; margin: 0 auto;">
+                            <h4 class="fw-bold">Nossas Soluções</h4>
+                            <p class="mb-0">
+                                Oferecemos soluções personalizadas em ortóteses, próteses e impressão 3D,
+                                focadas em qualidade, inovação e conforto para nossos clientes.
+                            </p>
+                        </div>
+
+                        <!-- VÍDEO CENTRALIZADO -->
+                        <div class="profile bg-gradient-primary-to-secondary mt-4 w-100 d-flex justify-content-center">
+                            <video 
+                                class="profile-img"
+                                autoplay
+                                muted
+                                loop
+                                playsinline
+                                preload="auto"
+                                style="width: 100%; max-width: 600px; height: auto; border-radius: 10px;">
+                                <source src="assets/meu-video.mp4" type="video/mp4">
+                                Seu navegador não suporta vídeos HTML5.
+                            </video>
+
+                            <div class="dots-2"></div>
+                            <div class="dots-4"></div>
+                        </div>
+
+                    </div>
+
                 </div>
-
-                <!-- TEXTO OCULTO -->
-                <div 
-                    id="textoMissao" 
-                    class="mt-3 p-4 border rounded shadow-sm text-center"
-                    style="display: none; max-width:600px;">
-                    <h4 class="fw-bold">Nossa Missão</h4>
-                    <p class="mb-0">
-                        Nossa missão é proporcionar soluções de engenharia inovadoras, eficientes e confiáveis,
-                        sempre com foco em tecnologia, qualidade e resultados consistentes para nossos clientes.
-                    </p>
-                </div>
-
-                <!-- VÍDEO CENTRALIZADO -->
-                <div class="profile bg-gradient-primary-to-secondary mt-4 w-100 d-flex justify-content-center">
-                    <video 
-                        class="profile-img"
-                        autoplay
-                        muted
-                        loop
-                        playsinline
-                        preload="auto"
-                        style="width: 100%; max-width: 600px; height: auto; border-radius: 10px;">
-                        <source src="assets/meu-video.mp4" type="video/mp4">
-                        Seu navegador não suporta vídeos HTML5.
-                    </video>
-
-                    <div class="dots-2"></div>
-                    <div class="dots-4"></div>
-                </div>
-
             </div>
-
-        </div>
-    </div>
-</header>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const btnMissao = document.getElementById('btnMissao');
-        const textoMissao = document.getElementById('textoMissao');
-
-        btnMissao.addEventListener('click', () => {
-            if(textoMissao.style.display === 'none' || textoMissao.style.display === '') {
-                textoMissao.style.display = 'block';
-            } else {
-                textoMissao.style.display = 'none';
-            }
-        });
-    });
-</script>
-
+        </header>
 
         <!-- About Section -->
         <section class="bg-light py-5">
@@ -162,7 +161,26 @@
     <!-- Core theme JS -->
     <script src="js/scripts.js"></script>
 
-   
+    <!-- JavaScript para os botões -->
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const btnMissao = document.getElementById('btnMissao');
+        const textoMissao = document.getElementById('textoMissao');
 
+        const btnSolucoes = document.getElementById('btnSolucoes');
+        const textoSolucoes = document.getElementById('textoSolucoes');
+
+        btnMissao.addEventListener('click', () => {
+            textoMissao.style.display = (textoMissao.style.display === 'none' || textoMissao.style.display === '') ? 'block' : 'none';
+        });
+
+        btnSolucoes.addEventListener('click', () => {
+            textoSolucoes.style.display = (textoSolucoes.style.display === 'none' || textoSolucoes.style.display === '') ? 'block' : 'none';
+        });
+    });
+    </script>
 </body>
 </html>
+
+
+
