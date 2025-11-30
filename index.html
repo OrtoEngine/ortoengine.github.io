@@ -48,62 +48,55 @@
         <!-- Header -->
         <header class="py-5">
             <div class="container px-5 pb-5">
-                <div class="row justify-content-center">
+                <div class="row gx-5 justify-content-center">
 
-                    <div class="col-xxl-7 d-flex flex-column align-items-center">
+                    <!-- COLUNA ÚNICA: BOTÕES + TEXTO + VÍDEO -->
+                    <div class="col-xxl-7 text-center">
 
-                        <!-- BOTÕES -->
-                       <div class="d-flex justify-content-center gap-3 mb-3 flex-wrap">
-    <!-- Botão Missão -->
-   <header class="py-5">
-    <div class="container px-5 pb-5">
-        <div class="row justify-content-center">
+                        <!-- BOTÕES CENTRALIZADOS -->
+                        <div class="d-flex justify-content-center gap-3 mb-3 flex-wrap">
+                            <button 
+                                id="btnMissao"
+                                type="button"
+                                class="btn btn-primary btn-lg px-5 py-3 fs-6 fw-bolder">
+                                Missão
+                            </button>
 
-            <div class="col-xxl-7 d-flex flex-column align-items-center">
+                            <a 
+                                class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" 
+                                href="projects.html">
+                                Soluções
+                            </a>
+                        </div>
 
-                <!-- BOTÕES CENTRALIZADOS -->
-                <div class="d-flex justify-content-center gap-3 mb-3 flex-wrap">
-                    <!-- Botão Missão -->
-                    <button 
-                        id="btnMissao"
-                        type="button"
-                        class="btn btn-primary btn-lg px-5 py-3 fs-6 fw-bolder">
-                        Missão
-                    </button>
+                        <!-- TEXTO OCULTO -->
+                        <div 
+                            id="textoMissao" 
+                            class="mt-3 p-4 border rounded shadow-sm mx-auto"
+                            style="display: none; max-width:600px;">
+                            <h4 class="fw-bold">Nossa Missão</h4>
+                            <p class="mb-0">
+                                Nossa missão é proporcionar soluções de engenharia inovadoras, eficientes e confiáveis,
+                                sempre com foco em tecnologia, qualidade e resultados consistentes para nossos clientes.
+                            </p>
+                        </div>
 
-                    <!-- Botão Soluções -->
-                    <button 
-                        id="btnSolucoes"
-                        type="button"
-                        class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder">
-                        Soluções
-                    </button>
-                </div>
+                        <!-- VÍDEO -->
+                        <div class="profile bg-gradient-primary-to-secondary mt-4">
+                            <video 
+                                class="profile-img"
+                                autoplay
+                                muted
+                                loop
+                                playsinline
+                                preload="auto"
+                                style="width: 100%; height: auto; border-radius: inherit;">
+                                <source src="assets/meu-video.mp4" type="video/mp4">
+                                Seu navegador não suporta vídeos HTML5.
+                            </video>
 
-                <!-- TEXTO DA MISSÃO -->
-                <div 
-                    id="textoMissao" 
-                    class="mt-3 p-4 border rounded shadow-sm text-center"
-                    style="display: none; max-width:600px; margin: 0 auto;">
-                    <h4 class="fw-bold">Nossa Missão</h4>
-                    <p class="mb-0">
-                        Nossa missão é proporcionar soluções de engenha
-
-
-                        <!-- VÍDEO AJUSTADO -->
-                        <div class="mt-4 d-flex justify-content-center">
-                            <div style="max-width: 600px; width: 100%;">
-                                <video
-                                    autoplay
-                                    muted
-                                    loop
-                                    playsinline
-                                    preload="auto"
-                                    style="width: 100%; border-radius: 10px;">
-                                    <source src="assets/meu-video.mp4" type="video/mp4">
-                                    Seu navegador não suporta vídeos HTML5.
-                                </video>
-                            </div>
+                            <div class="dots-2"></div>
+                            <div class="dots-4"></div>
                         </div>
 
                     </div>
@@ -144,6 +137,7 @@
     <footer class="bg-white py-4 mt-auto">
         <div class="container px-5">
             <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <!-- Footer Content -->
             </div>
         </div>
     </footer>
@@ -153,8 +147,7 @@
     <!-- Core theme JS -->
     <script src="js/scripts.js"></script>
 
-    <!-- JS Missão -->
-    
+   
 
 </body>
 </html>
