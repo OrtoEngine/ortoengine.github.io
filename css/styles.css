@@ -11724,32 +11724,49 @@ html {
     left: -2vw;
   }
 
-  button {
-    background-color: #0056D2; /* Azul acessível */
-    color: white;
-    padding: 18px 28px;
-    font-size: 20px;
-    border: none;
+ /* Nav links mais bonitos, acessíveis e modernos */
+.navbar-nav .nav-link {
+    font-size: 1.15rem !important;
+    padding: 12px 22px !important;
     border-radius: 12px;
-    cursor: pointer;
-    width: 100%;
-    max-width: 300px;
-    margin: 12px auto;
-    display: block;
-    transition: background-color 0.2s ease, transform 0.1s ease;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    transition: background-color 0.25s ease, 
+                color 0.25s ease, 
+                transform 0.2s ease;
 }
 
-button:hover {
-    background-color: #003C99;
+/* Hover: destaque suave, elegante e profissional */
+.navbar-nav .nav-link:hover {
+    background-color: #0d6efd;
+    color: #ffffff !important;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 14px rgba(13, 110, 253, 0.25);
 }
 
-button:active {
-    transform: scale(0.97);
+/* Estado ativo (página atual) e foco (teclado) */
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:focus {
+    background-color: #0b5ed7;
+    color: #ffffff !important;
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.35);
 }
 
-button:focus {
-    outline: 4px solid #FFCC00; /* Acessibilidade */
+/* Área de toque maior para acessibilidade */
+.navbar-nav .nav-item {
+    margin: 0 6px;
 }
+
+/* Mais espaço entre itens em telas pequenas */
+@media (max-width: 992px) {
+    .navbar-nav .nav-link {
+        font-size: 1.25rem !important;
+        padding: 14px 24px !important;
+        margin-top: 6px;
+    }
+}
+
 
 
 }
