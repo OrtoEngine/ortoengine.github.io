@@ -1,152 +1,228 @@
-```html id="htmlfull01"
+```html id="finalcode01"
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>OrtoEngine | Vendas</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VENDAS</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="assets/favicon.ico">
+    <link rel="icon" href="assets/favicon.ico" />
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
 
-    <!-- Custom CSS -->
-    <link href="css/styles.css" rel="stylesheet">
+    <!-- CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
 
 <body class="d-flex flex-column min-vh-100 bg-light">
 
-<!-- HEADER / NAV -->
-<header>
-    <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
-        <div class="container px-4">
-            <a class="navbar-brand fw-bold text-primary" href="index.html">OrtoEngine</a>
+<main class="flex-shrink-0">
 
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+    <div class="container px-5">
 
-            <div class="collapse navbar-collapse" id="navMenu">
-                <ul class="navbar-nav ms-auto fw-semibold">
-                    <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Produtos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Tutorial</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
-                </ul>
-            </div>
+        <a class="navbar-brand" href="index.html">
+            <span class="fw-bolder text-primary">Voltar</span>
+        </a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav ms-auto small fw-bolder">
+                <li class="nav-item"><a class="nav-link" href="index.html">Página Inicial</a></li>
+                <li class="nav-item"><a class="nav-link" href="resume.html">Compre Já</a></li>
+                <li class="nav-item"><a class="nav-link" href="projects.html">Tutorial de Uso</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contato</a></li>
+            </ul>
         </div>
-    </nav>
-</header>
 
-<!-- MAIN -->
-<main class="flex-grow-1">
+    </div>
+</nav>
 
-<!-- HERO -->
-<section class="py-5 text-center">
-    <div class="container">
-        <h1 class="fw-bold display-5 text-primary">Televendas</h1>
-        <p class="fw-semibold fs-4 text-dark mt-2">
+<!-- HEADER -->
+<div class="container px-5 my-5">
+    <div class="text-center mb-5">
+
+        <h1 class="display-4 fw-bolder mb-2">
+            <span class="text-primary">Televendas</span>
+        </h1>
+
+        <p class="fs-3 fw-bold text-dark mt-2">
             ACABE COM AS DORES, MAS NÃO ABRA MÃO DO SEU ESTILO!
         </p>
+
     </div>
-</section>
+</div>
 
 <!-- PRODUTOS -->
-<section class="pb-5">
-    <div class="container">
-        <div class="row g-4">
+<div class="container px-5">
+    <div class="row gx-5 justify-content-center">
+        <div class="col-lg-11 col-xl-9 col-xxl-8">
 
-            <!-- CARD PRODUTO -->
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 border-0 shadow rounded-4">
+            <div class="row g-4">
 
-                    <div class="ratio ratio-1x1">
-                        <img src="assets/ortesemaopreta.jpeg" class="w-100 h-100 object-fit-cover rounded-top-4">
-                    </div>
+                <!-- PRODUTO 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card shadow border-0 rounded-4 h-100">
 
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="fw-bold text-primary">Órtese de Mão (Preta)</h5>
-
-                        <div class="small text-muted">Direita ou Esquerda</div>
-                        <div class="small text-muted mb-2">P • M • G</div>
-
-                        <div class="fw-bold mb-2">
-                            R$ <span class="text-success">299,90</span>
+                        <div class="ratio ratio-1x1">
+                            <img src="assets/ortesemaopreta.jpeg" class="w-100 h-100 object-fit-cover rounded-top-4">
                         </div>
 
-                        <p class="small text-muted flex-grow-1">
-                            Suporte anatômico leve e resistente.
-                        </p>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="text-primary fw-bolder mb-2">Órtese de Mão (Preta)</h5>
 
-                        <a href="#" class="btn btn-success rounded-pill mt-auto">🛒 Comprar</a>
+                            <div class="small text-muted">Direita ou Esquerda</div>
+                            <div class="small text-muted mb-2">P • M • G</div>
+
+                            <div class="small fw-bolder mb-1">
+                                Preço: <span class="text-success">R$ 299,90 ou 10x de R$ 35,32</span>
+                            </div>
+
+                            <div class="small text-muted">Modelo: Ortoblack</div>
+                            <div class="small text-muted mb-3">Código: OEMDP01</div>
+
+                            <p class="small text-muted flex-grow-1">
+                                Órtese anatômica desenvolvida para suporte e reabilitação da mão.
+                            </p>
+
+                            <a href="#" class="btn btn-success w-100 rounded-pill mt-auto">🛒 Comprar</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- DUPLICAR CARD PARA NOVOS PRODUTOS -->
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 border-0 shadow rounded-4">
+                <!-- PRODUTO 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card shadow border-0 rounded-4 h-100">
 
-                    <div class="ratio ratio-1x1">
-                        <img src="assets/cervicalpreta.jpeg" class="w-100 h-100 object-fit-cover rounded-top-4">
-                    </div>
-
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="fw-bold text-primary">Colar Cervical</h5>
-
-                        <div class="fw-bold mb-2">
-                            R$ <span class="text-success">249,90</span>
+                        <div class="ratio ratio-1x1">
+                            <img src="assets/cervicalpreta.jpeg" class="w-100 h-100 object-fit-cover rounded-top-4">
                         </div>
 
-                        <p class="small text-muted flex-grow-1">
-                            Imobilização cervical com conforto.
-                        </p>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="text-primary fw-bolder mb-2">Colar Cervical</h5>
 
-                        <a href="#" class="btn btn-success rounded-pill mt-auto">🛒 Comprar</a>
+                            <div class="small fw-bolder mb-1">
+                                Preço: <span class="text-success">R$ 249,90 ou 10x de R$ 30,00</span>
+                            </div>
+
+                            <div class="small text-muted">Modelo: CerviFlex</div>
+                            <div class="small text-muted mb-3">Código: OEC0B01</div>
+
+                            <p class="small text-muted flex-grow-1">
+                                Suporte e imobilização da coluna cervical.
+                            </p>
+
+                            <a href="#" class="btn btn-success w-100 rounded-pill mt-auto">🛒 Comprar</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+                <!-- PRODUTO 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card shadow border-0 rounded-4 h-100">
+
+                        <div class="ratio ratio-1x1">
+                            <img src="assets/joelheira.jpg" class="w-100 h-100 object-fit-cover rounded-top-4">
+                        </div>
+
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="text-primary fw-bolder mb-2">Órtese de Dedo</h5>
+
+                            <div class="small text-muted">Indicador ou Anelar</div>
+                            <div class="small text-muted mb-2">P • M • G</div>
+
+                            <div class="small fw-bolder mb-1">
+                                Preço: <span class="text-success">R$ 50,00</span>
+                            </div>
+
+                            <div class="small text-muted">Modelo: FlexFinger</div>
+                            <div class="small text-muted mb-3">Código: OED0B01</div>
+
+                            <p class="small text-muted flex-grow-1">
+                                Estabilização para fraturas e lesões.
+                            </p>
+
+                            <a href="#" class="btn btn-success w-100 rounded-pill mt-auto">🛒 Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUTO 4 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card shadow border-0 rounded-4 h-100">
+
+                        <div class="ratio ratio-1x1">
+                            <img src="assets/ortesemaobranca.jpeg" class="w-100 h-100 object-fit-cover rounded-top-4">
+                        </div>
+
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="text-primary fw-bolder mb-2">Órtese de Mão (Branca)</h5>
+
+                            <div class="small text-muted">Direita ou Esquerda</div>
+                            <div class="small text-muted mb-2">P • M • G</div>
+
+                            <div class="small fw-bolder mb-1">
+                                Preço: <span class="text-success">R$ 299,90 ou 10x de R$ 35,32</span>
+                            </div>
+
+                            <div class="small text-muted">Modelo: Ortowhite</div>
+                            <div class="small text-muted mb-3">Código: OEMEB01</div>
+
+                            <p class="small text-muted flex-grow-1">
+                                Conforto e estabilidade para reabilitação.
+                            </p>
+
+                            <a href="#" class="btn btn-success w-100 rounded-pill mt-auto">🛒 Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
-</section>
+</div>
 
 <!-- SOBRE -->
-<section class="bg-white py-4 border-top">
+<section class="bg-light py-4 mt-5">
     <div class="container text-center">
+
         <h6 class="fw-bold text-secondary">Sobre a OrtoEngine</h6>
-        <p class="small text-muted mb-1">
-            Tecnologia e saúde com soluções em impressão 3D.
-        </p>
+
         <p class="small text-muted">
-            Atacado e varejo de órteses personalizadas.
+            Unimos tecnologia e saúde com soluções em impressão 3D.
         </p>
 
-        <a href="#" class="text-secondary">
-            <i class="bi bi-linkedin fs-5"></i>
+        <a class="text-secondary" href="https://www.linkedin.com/in/orto-engine-3aa00a388/" target="_blank">
+            <i class="bi bi-linkedin"></i>
         </a>
+
     </div>
 </section>
 
 </main>
 
 <!-- FOOTER -->
-<footer class="bg-white text-center py-3 small mt-auto border-top">
+<footer class="bg-white py-3 mt-auto text-center small">
     © 2026 OrtoEngine
 </footer>
 
-<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
 ```
+
+
